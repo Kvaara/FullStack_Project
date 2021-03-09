@@ -1,6 +1,6 @@
 1. Head to the project directory and install the required dependencies by using 'npm i' or 'npm install'
 
-2. Run the app.js by using node, which is located in the 'src' folder (node app.js)
+2. Run the app.js by using node or nodemon, which is located in the 'src' folder (node app.js)
 
 3. It should now be running on port 3000. Go to localhost:3000 or 127.0.0.1:3000.
 
