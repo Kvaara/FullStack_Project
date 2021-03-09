@@ -1,15 +1,17 @@
-const registrationButton = (students) => {
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 
-    students.forEach( (student, index) => {
-        const registrationButton = document.getElementById("register" + index);
-        registrationButton.setAttribute("class", "register");
+const registration = (students) => {
+  students.forEach((student, index) => {
+    const registrationButton = document.getElementById(`register${index}`);
+    registrationButton.setAttribute("class", "register");
 
-        let clicked = 0;
-        registrationButton.addEventListener("click", () => {
-            clicked++;
-            if (clicked & 2 != 0) {
-                registration(student, index);
-            }
-        }) 
-    })
-}
+    let clicked = 0;
+    registrationButton.addEventListener("click", () => {
+      clicked += 1;
+      if (clicked % 2 !== 0) {
+        registering(student, index);
+      }
+    });
+  });
+};
